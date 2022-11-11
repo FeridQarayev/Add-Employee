@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link href="/mycss.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="mydiv">
+    <form>
+      <div class="myclass">
+        <h1>Register</h1>
+        <hr>
+    
+        <label for="name"><b>Name</b></label>
+        <input class="myinput" type="text" placeholder="Enter Name"  id="dname" >
+    
+        <label for="surname"><b>Surname</b></label>
+        <input type="text" placeholder="Enter Surname" name="surname" id="surname" >
+    
+        <label for="age"><b>Age</b></label>
+        <input type="number" placeholder="Enter Age" name="age" id="age" >
+  
+        <label for="nationality"><b>Nationality</b></label>
+        <select id="nationality">
+          <option value="Azerbaijan">Azerbaijan</option>
+          <option value="Russia">Russia</option>
+          <option value="Turkey">Turkey</option>
+          <option value="Georgia">Georgia</option>
+        </select>
+  
+        <label for="position"><b>Position</b></label>
+        <select id="position">
+          <option value="Frontend">Frontend Developer</option>
+          <option value="Backend">Backend Developer</option>
+        </select>
+  
+        <label for="experience"><b>Experience</b></label>
+        <input id="experience" type="date">
+    
+        <button id="mybutton"  class="registerbtn">Register</button>
+      </div>
+    
+    </form>
+  </div>
+
+  <div>
+    <table class="table table-success table-striped" id="mytable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Age</th>
+          <th>Nationality</th>
+          <th>Position</th>
+          <th>Experience</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tablebody">
+      </tbody>
+    </table>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
